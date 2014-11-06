@@ -9,7 +9,8 @@ def findPrimes(n):
 
 
 def testPrime(t):
-    for i in range(2, t):
+    #ended iteration at the sq root of t
+    for i in range(2, int(t**0.5 + 1)):
         if i < t:
             if (t % i) == 0:
                 return False
